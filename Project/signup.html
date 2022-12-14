@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #header{
+            border-bottom: 1px solid white;
+            padding-bottom: 10px;
+        }
+         #header>div:nth-child(1){
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    background-color: black;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+   }
+  #header>div:nth-child(1) a{
+    padding-right: 20px;
+    text-decoration: none;
+    color: white;
+   }
+   a:hover{
+    cursor: pointer;
+    background-color: black;
+   }
+   button:hover{
+    cursor: pointer;
+    background-color: black;
+   }
+   button{
+    background-color: black;
+    font-size: large;
+   }
+   nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+   }
+   nav a{
+    text-decoration: none;
+    padding-left: 20px;
+    color: white;
+   }
+   nav input{
+    width: 80%;
+    padding-left: 10px;
+    height: 50px;
+    background-color: black;
+   }
+   img{
+    width: 90x;
+    height: 90px;
+    border-radius: 5px;
+   }
+   img:hover{
+    cursor: pointer;
+   }
+   nav>div{
+    padding-top: 20px;
+   }
+
+   *{
+            background-color: black;
+            color:white;
+        }
+        input{
+            border: 0px;
+            border-bottom: 1px solid white;
+            padding-bottom: 10px;
+        }
+        #btn-1{
+            margin-top: 10px;
+        }
+       #grd{
+        width: 100%;
+        display: flex;
+        margin: auto;
+       }
+       #grd>div:nth-child(1){
+        width: 40%;
+        text-align: left;
+        padding: 80px 20px 0px 55px;
+       }
+       #grd>div:nth-child(2){
+        width: 70%;
+       }
+       .mar{
+        width: 100%;
+        height: 12%;
+       }
+       .mar img {
+        width: 100%;
+        height: 100%;
+       }
+       #links button{
+        display: block;
+        margin-top: 20px;
+       }
+       #links a{
+        text-decoration: none;
+       }
+       /* #grd>div:nth-child(2)>marquee{
+        width: 90%;
+       } */
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div>
+            <a href="">CN-US$</a>
+            <a href="">Help</a>
+            <a id="signup" ><button>Signup or Log-In</button></a>
+        </div>
+        <nav>
+            <img src="./image/ezgif.com-gif-maker.gif" alt="">
+            <div>
+            <a href="">WOMEN</a>
+            <a href="">MEN</a>
+        </div>
+            <input type="search" placeholder="Search (e.g. 'Valentino dresses')">
+        </nav>
+        </div>
+   <div id="grd">
+    <div>
+        <h1>The Only Fashion Site You Need</h1>
+        <h2>Email</h2>
+        <form id="form">
+            <input type="email" placeholder="Enter your E-mail Here">
+        </form>
+        <button id="btn-1">Continue</button>
+        <p>----------or----------</p>
+        <div id="links">
+        <a href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?client_id=339631454810-1q56aau84m9steki9hvv8frnki0vvc5c.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fwww.lyst.com%2Fsocial%2Fcomplete%2Fgoogle-oauth2%2F&state=6RCntIklbHJdsKNf5qSIhqqfcqZtZl2X&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile%20openid%20email%20profile&prompt=select_account&service=lso&o2v=1&flowName=GeneralOAuthFlow"><button>Continue With Google</button></a>
+        <a href="https://appleid.apple.com/auth/authorize?client_id=com.lyst.lystapp.client&redirect_uri=https://www.lyst.com/social/complete/apple-id/&state=EWS31GXZPLG9S3pXQnB7hzMS5pKc4lj0&response_type=code&response_mode=form_post&scope=email%20name"><button>Continue With Apple</button></a>
+        <a href="https://www.facebook.com/v3.3/dialog/oauth?client_id=152784791451625&redirect_uri=https://www.lyst.com/social/complete/facebook/&state=UGh3qO623llNeNptKBlAmnIJ21TiNw6c&return_scopes=true&scope=email"><button>Continue With Facebook</button></a>
+    </div>
+        <p>By creating an account, you consent to Lst’s <a href="">Terms & Conditions</a> . To learn more about how Lst uses and protects your personal data, please read Lst’s <a href="">Privacy Policy</a>.</p>
+    </div>
+    <div>
+        <marquee class="mar" behaviur="scroll" direction="UP" ><img  src="https://static.lystit.com/static/n/img/sign-up/value-proposition-full-min.12502ad2e109c860f1eeceea2a988ddf.png" alt=""></marquee>
+    </div>
+    </div>
+</body>
+</html>
