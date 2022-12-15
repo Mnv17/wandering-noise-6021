@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Style Together (LST)</title>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font- 
+      awesome.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+   <style>
+     *{
+            background-color: black;
+            color:white;
+            margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: Suisse Intl,Helvetica Neue,Helvetica,Arial,sans-serif;;
+        }
+    #header{
+            border-bottom: 1px solid white;
+            padding-bottom: 10px;
+        }
+   #header>div:nth-child(1){
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    background-color: black;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+   }
+  #header>div:nth-child(1) a{
+    padding-right: 20px;
+    text-decoration: none;
+    color: white;
+   }
+   a:hover{
+    cursor: pointer;
+   }
+   button:hover{
+    cursor: pointer;
+    background-color: black;
+   }
+   button{
+    background-color: black;
+    font-size: large;
+   }
+   nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+   }
+   nav a{
+    text-decoration: none;
+    padding-left: 20px;
+    color: white;
+   }
+   nav input{
+    width: 80%;
+    padding-left: 10px;
+    height: 50px;
+    background-color: black;
+   }
+   img{
+    width: 90x;
+    height: 90px;
+    border-radius: 5px;
+   }
+   img:hover{
+    cursor: pointer;
+   }
+   nav>div{
+    padding-top: 20px;
+   }
+   .slide {
+margin: 0;
+padding: 0;
+font-family: Arial, Helvetica, sans-serif;
+width: 100%;
+height: 100vh;
+overflow-x: hidden;
+background-size: 90% ;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.slide1 {
+background-image: url(
+"https://cdna.lystit.com/cms/YIF_Banner_XL_Desktop_76bdba2aa5.jpg");
+}
+.slide1:hover{
+    cursor: pointer;
+}
+.slide2 {
+background-image: url(
+"https://cdna.lystit.com/cms/EN_XL_1be4462434.png");
+}
+.slide2:hover{
+    cursor: pointer;
+}
+.arrow {
+cursor: pointer;
+position: absolute;
+top: 50%;
+margin-top: -35px;
+width: 0;
+height: 0;
+border-style: solid;
+}
+#arrow-left {
+border-width: 20px 30px 20px 0;
+border-color: transparent #fff transparent transparent;
+left: 0;
+margin-left: 20px;
+margin-top: 130px;
+}
+
+#arrow-right {
+border-width: 20px 0 20px 30px;
+border-color: transparent transparent transparent #fff;
+right: 0;
+margin-right: 20px;
+margin-top: 130px;
+}
+  #images{
+    width: 90%;
+    display: block;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
+    margin: auto;
+  }
+  p{
+    flex-direction: column-reverse;
+  }
+  #outerdiv{
+    width: 99%;
+    display: flex;
+    margin: auto;
+    position: absolute;
+    
+  }
+ .innerdiv p{
+    writing-mode: vertical-lr;
+            display: inline;
+            transform: rotate( 180deg);
+            font-size: large;
+  }
+  .innerdiv{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    border: 1px solid rgb(160, 158, 158);
+    font-family: Suisse Intl,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 20px;
+    height: 268px;
+    cursor: pointer;
+  }
+  .innerdiv img{
+    width: fit-content;
+    height: 220px;
+    /* padding-bottom: 40px; */
+  }
+  #outerdiv2{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    height: 50x;
+    
+  }
+  .inner{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    border: 1px solid rgb(160, 158, 158);
+    font-family: Suisse Intl,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    margin-top: 290px;
+    height: 270px;
+    cursor: pointer;
+  }
+  .inner p{
+    writing-mode: vertical-lr;
+            display: inline;
+            transform: rotate( 180deg);
+            font-size: large;
+  }
+  .inner img{
+    width: fit-content;
+    height: 230px;
+    /* /* padding-bottom: 40px;  */
+ }
+    .slider1 {
+        width: 100%;
+        /* background: #222; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    .swiper {
+        width: 80%;
+       height: auto;
+    }
+    .swiper-slide>img {
+        width: 100%;
+        height: 400px;
+    }
+    #heading h3{
+        height: 40px;
+        text-align: center;
+        font-size: x-large;
+        padding: 40px;
+        margin: auto;
+        animation-delay: 3s;
+    }
+    #heading-2 h3{
+        height: 40px;
+        text-align: center;
+        font-size: x-large;
+        padding: 40px;
+        margin: auto;
+        animation-delay: 3s;
+    }
+    #heading-2{
+        padding-top: 40px;
+    }
+    .slider2 {
+        margin-top: 30px;
+        width: 100%;
+       
+        background: #222;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .slider2.swiper {
+        width: 80%;
+       height: auto;
+
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: 400px;
+    }
+    #maindiv{
+        width: 100%;
+        /* height: 400px; */
+        display: flex;
+        margin: auto;
+        margin-top: 40px;
+        
+    }
+    #maindiv>div {
+        font-size: x-large;
+        padding: 40px;
+        width: 100%;
+    }
+    .changecolor:hover{
+        background-color: black;
+    }
+    .changecolor{
+        background-color: darkgreen;
+    }
+    .changeColor{
+        background-color: darkgreen;
+    }
+    .changeColor button{
+        padding: 10px;
+        margin-top: 20px;
+        width: 60%;
+    }
+   </style>
+</head>
+<body>
+    <div id="header">
+    <div>
+        <a href="">CN-US$</a>
+        <a href="">Help</a>
+        <a id="signup" ><button>Sign-Up or Log-In</button></a>
+    </div>
+    <nav>
+        <img src="./image/ezgif.com-gif-maker.gif" alt="">
+        <div>
+        <a href="">WOMEN</a>
+        <a href="">MEN</a>
+    </div>
+        <input type="search" placeholder="Search (e.g. 'Valentino dresses')">
+    </nav>
+    </div>
+    <div id="arrow-left" class="arrow"></div>
+    <div class="slide slide1"></div>
+    <div class="slide slide2"></div>
+    <div id="arrow-right" class="arrow"></div>
+
+    <div id="outerdiv">
+        <div class="innerdiv">
+             <p>ALL THAT GLITTERS</p>
+             <marquee behavior="scroll" direction="right"><img src="https://cdna.lystit.com/cms/0d04b456_fa24_42aa_9d35_c7008854e970_e4c36405b2.png" alt="Error"></marquee>
+            
+        </div>
+        <div class="innerdiv">
+            <p>POWER DRESSER: BELLA HADID</p>
+            <marquee behavior="scroll" direction="right"><img src="https://cdna.lystit.com/cms/D322_B0_BC_BC_75_4_E5_B_9858_1_C26_E30_EC_7_DE_5706927b9d.png" alt="Error"></marquee>
+            
+        </div>
+        <div class="innerdiv">
+            <p>TRENDING IN ASPEN</p>
+            <marquee behavior="scroll" direction="right"> <img src="https://cdna.lystit.com/cms/3c3d3937_f1dd_427c_ae5f_8a9cbb0788ee_45b3b02667.png" alt="Error"></marquee>
+            
+        </div>
+        <div class="innerdiv">
+            <p>GET TO KNOW: NENCI TOJAKA</p>
+            <marquee behavior="scroll" direction="right"> <img src="https://cdna.lystit.com/cms/e26b4a3a_f41f_4211_9d06_3f313c694247_1295b99158.png" alt="Error"></marquee>
+           
+        </div>
+        <div class="innerdiv">
+            <p>IN FOCUS: SURREAL LOEWE</p>
+            <marquee behavior="scroll" direction="right">  <img src="https://cdna.lystit.com/cms/2ef642f2_4104_43b7_8717_e2cd74581b19_4c6570163e.png" alt="Error"></marquee>
+            
+        </div>
+    </div>
+    <div id="outerdiv2">
+        <div class="inner">
+             <p>Discover the Prada Holiday men's collection</p>
+           <marquee behavior="scroll" direction="left"> <img src="https://cdna.lystit.com/cms/600x600_Affiliate_Prada_Holiday_BU_1_1_e41fdd0245.jpg" alt="Error"></marquee>
+            
+        </div>
+        <div class="inner">
+            <p>Yoox: Gift Trends </p>
+            <marquee behavior="scroll" direction="left">  <img src="https://cdna.lystit.com/cms/Top_Lyst5th_U_Sand_IT_600x600_s_594ad2e245.jpg" alt="Error"></marquee>
+            
+        </div>
+        <div class="inner">
+            <p>EA7 Fall Winter Sales: UP TO 40% OFF</p>
+            <marquee behavior="scroll" direction="left">  <img src="https://cdna.lystit.com/cms/EA_7_Gift_Finder_4f3e2522b6.jpg" alt="Error"></marquee>
+            
+        </div>
+        <div class="inner">
+            <p>Stone Island | FW_'022 '23 collection</p>
+            <marquee behavior="scroll" direction="left"> <img src="https://cdna.lystit.com/cms/HP_Top_Lyst_Banner_600x600_6bb8c2a582.jpg" alt="Error"></marquee>
+           
+        </div>
+        <div class="inner">
+            <p>Mulberry: Discover new mini & micro bags at Mulberry. Micro size, Maximum impact.</p>
+            <marquee behavior="scroll" direction="left"> <img src="https://cdna.lystit.com/cms/LYST_600x600_2_1_43b30fb898.jpg" alt="Error"></marquee>
+            
+        </div>
+    </div>
+    <div id="heading">
+   <marquee behavior="scroll" direction="UP">
+    <h3>Breakout Brands</h3>
+</marquee> 
+</div>
+    <div class="slider1">
+        <div class="swiper">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide"><img 
+                        src="https://m.media-amazon.com/images/G/31/img22/Fashion/Flips/Winterflip2/topscrolls/pc/PC_1._SX3000_QL85_.jpg"
+                        alt="Error">
+                </div>
+                <div class="swiper-slide"><img
+                        src="https://img.freepik.com/premium-photo/banner-web-page-cover-template-clothes-rack-glasses-fashion-shop_41418-4112.jpg?w=2000"
+                        alt="Error">
+                </div>
+                <div class="swiper-slide"><img
+                    src="https://as1.ftcdn.net/v2/jpg/03/81/07/74/1000_F_381077472_Zqttov9dRe2PwQcvYVBcPsUrrMY5EMRd.jpg"
+                    alt="Error">
+                 </div>
+                 <div class="swiper-slide"><img
+                    src="https://www.rei.com/dam/content_team_010818_52427_htc_running_shoes_hero2_lg.jpg"
+                    alt="Error">
+                 </div>
+                 <div class="swiper-slide"><img
+                    src="https://www.babycenter.com/ims/2021/09/Stocksy_txp7750cd892YC300_Medium_1247227_wide.jpg"
+                    alt="Error">
+                 </div>
+                 <div class="swiper-slide"><img
+                    src="https://static.fibre2fashion.com//articleresources/images/70/6946/the-science-behind-clothing-comfort_big.jpg"
+                    alt="Error">
+                 </div>
+                 <div class="swiper-slide"><img
+                    src="https://wrap.org.uk/sites/default/files/styles/opengraph_image/public/2020-09/overflowing_clothes_in_wardrobe_TC_0254_SS.jpg?itok=FUA9QSOf"
+                    alt="Error">
+                 </div>
+                 <div class="swiper-slide"><img
+                    src="https://www.beyoung.in/blog/wp-content/uploads/2022/06/Header-1.jpg"
+                    alt="Error">
+                 </div>
+                 <div class="swiper-slide"><img
+                    src="https://marvel-b1-cdn.bc0a.com/f00000000114841/www.florsheim.com/shop/index/FW22-FL-ThirdRefresh-MainXplor-Desktop.jpg"
+                    alt="Error">
+                 </div>
+                 <div class="swiper-slide"><img
+                    src="https://www.realsimple.com/thmb/vcQqq4rCxLuINJQ_fZW7NZspS4w=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/clothing-2000-b5ef8d353ed54800b1a29e3e7c5b2709.jpg"
+                    alt="Error">
+                 </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            
+        </div>
+    </div>
+    <div id="heading-2">
+        <marquee behavior="scroll" direction="UP">
+         <h3>Trending Now</h3>
+     </marquee> 
+    <div class="slider2">
+        <div class="swiper">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide"><img 
+                        src="https://images-eu.ssl-images-amazon.com/images/G/31/img16/Shoes/SIS/FormalSS/SS16/Formal-Shoes-PC_06._V272887482_.jpg"
+                        alt="Error">
+                </div>
+                <div class="swiper-slide"><img
+                        src="https://image.josbank.com/is/image/JosBank/ArticleImage_BDvsBC"
+                        alt="Error">
+                </div>
+                <div class="swiper-slide"><img
+                    src="https://img.faballey.com/images/indlkbk/020818/lookbookimage.jpg"
+                    alt="Error">
+                 </div>
+                 <div class="swiper-slide"><img
+                    src="http://1.bp.blogspot.com/-_R-yHLtKWMo/UUdH1t5xz3I/AAAAAAAAAFk/14GFT2l1-ZE/s1600/ticket+cover+photo+new.jpg"
+                    alt="Error">
+                 </div>
+                 <div class="swiper-slide"><img
+                    src="https://img.faballey.com/images/indya/theedit/editindlkbkimg1.jpg"
+                    alt="Error">
+                 </div>
+                 <div class="swiper-slide"><img
+                    src="https://i1.wp.com/www.momoafrica.com/wp-content/uploads/2017/12/coporate-attire-3.jpg?resize=658%2C335&ssl=1"
+                    alt="Error">
+                 </div>
+                 <div class="swiper-slide"><img
+                    src="https://www.thefashionstation.in/wp-content/uploads/2020/12/the-indian-fashion-.jpg"
+                    alt="Error">
+                 </div>
+                 <div class="swiper-slide"><img
+                    src="https://t3.ftcdn.net/jpg/02/87/92/50/360_F_287925057_ezp0nYQJnw44tRsixM1tEn4hIIL8Zf13.jpg"
+                    alt="Error">
+                 </div>
+                 <div class="swiper-slide"><img
+                    src="https://blog.jalebe.com/wp-content/uploads/2020/06/feature-4.jpg"
+                    alt="Error">
+                 </div>
+                 <div class="swiper-slide"><img
+                    src="https://cdn.shopify.com/s/files/1/2260/2507/articles/weddingOutfitIdeas_1024x1024.jpg?v=1589187566"
+                    alt="Error">
+                 </div>
+                 <!-- <div class="swiper-slide"><img
+                    src=""
+                    alt="Error">
+                 </div> -->
+
+            </div>
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            
+        </div>
+    </div>
+
+    <div id="maindiv">
+        <div>
+            <h1>1</h1>
+            <h2>THE BIGGEST SELECTION</h2>
+            <p>Shop over 12,000 brands and stores in one place.</p>
+            <p>Find exactly what you want with powerful search and personal recommendations.</p>
+        </div>
+        <div>
+            <h1>2</h1>
+            <h2>THE HOTTEST PRODUCTS</h2>
+            <p>See what’s new and what’s trending.</p>
+            <p>Hit the heart to receive alerts on the latest drops from your favourite brands.</p>
+        </div>
+        <div>
+            <h1>3</h1>
+            <h2>THE BEST PRICES</h2>
+            <p>Compare prices and shipping options across thousands of stores.</p>
+            <p>Lyst members are notified when an item goes on sale.</p>
+        </div>
+            <div class="changeColor">
+                <h1 class="changecolor" >SIGN-UP FOR SMARTER SHOPPING</h1><button>Join ➡</button>
+    </div>
+    </div>
+
+
+  
+</body>
+<script>
+    let header = document.getElementById("header");
+    header.addEventListener("click",(e)=>{
+        e.preventDefault();
+    })
+    let signup = document.getElementById("signup");
+    signup.addEventListener("click",()=>{
+        window.location.href="signup.html"
+    })
+
+    let sliderImages = document.querySelectorAll(".slide"),
+arrowLeft = document.querySelector("#arrow-left"),
+arrowRight = document.querySelector("#arrow-right"),
+current = 0;
+
+
+function reset() {
+for (let i = 0; i < sliderImages.length; i++) {
+	sliderImages[i].style.display = "none";
+}
+}
+function startSlide() {
+reset();
+sliderImages[0].style.display = "block";
+}
+
+
+function slideLeft() {
+reset();
+sliderImages[current - 1].style.display = "block";
+current--;
+}
+
+function slideRight() {
+reset();
+sliderImages[current + 1].style.display = "block";
+current++;
+}
+
+arrowLeft.addEventListener("click", function () {
+if (current === 0) {
+	current = sliderImages.length;
+}
+slideLeft();
+});
+
+arrowRight.addEventListener("click", function () {
+if (current === sliderImages.length - 1) {
+	current = -1;
+}
+slideRight();
+});
+
+startSlide();
+const swiper = new Swiper('.swiper', {
+        autoplay: {
+            delay: 2000,
+            disableOnIntraction: false,
+        },
+        loop: true,
+
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+    });
+
+</script>
+</html>

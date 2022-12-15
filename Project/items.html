@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font- 
+      awesome.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <style>
+  * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    .slider2 {
+        width: 100%;
+       
+        background: #222;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .slider2.swiper {
+        width: 80%;
+       height: auto;
+
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: 400px;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="slider2">
+        <div class="swiper">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide"><img 
+                        src="https://images-eu.ssl-images-amazon.com/images/G/31/img16/Shoes/SIS/FormalSS/SS16/Formal-Shoes-PC_06._V272887482_.jpg"
+                        alt="Error">
+                </div>
+                <div class="swiper-slide"><img
+                        src="https://image.josbank.com/is/image/JosBank/ArticleImage_BDvsBC"
+                        alt="Error">
+                </div>
+                <div class="swiper-slide"><img
+                    src="https://img.faballey.com/images/indlkbk/020818/lookbookimage.jpg"
+                    alt="Error">
+                 </div>
+                 <div class="swiper-slide"><img
+                    src="http://1.bp.blogspot.com/-_R-yHLtKWMo/UUdH1t5xz3I/AAAAAAAAAFk/14GFT2l1-ZE/s1600/ticket+cover+photo+new.jpg"
+                    alt="Error">
+                 </div>
+                 <div class="swiper-slide"><img
+                    src="https://img.faballey.com/images/indya/theedit/editindlkbkimg1.jpg"
+                    alt="Error">
+                 </div>
+                 <div class="swiper-slide"><img
+                    src="https://i1.wp.com/www.momoafrica.com/wp-content/uploads/2017/12/coporate-attire-3.jpg?resize=658%2C335&ssl=1"
+                    alt="Error">
+                 </div>
+                 <div class="swiper-slide"><img
+                    src="https://www.thefashionstation.in/wp-content/uploads/2020/12/the-indian-fashion-.jpg"
+                    alt="Error">
+                 </div>
+                 <div class="swiper-slide"><img
+                    src="https://t3.ftcdn.net/jpg/02/87/92/50/360_F_287925057_ezp0nYQJnw44tRsixM1tEn4hIIL8Zf13.jpg"
+                    alt="Error">
+                 </div>
+                 <div class="swiper-slide"><img
+                    src="https://blog.jalebe.com/wp-content/uploads/2020/06/feature-4.jpg"
+                    alt="Error">
+                 </div>
+                 <div class="swiper-slide"><img
+                    src="https://cdn.shopify.com/s/files/1/2260/2507/articles/weddingOutfitIdeas_1024x1024.jpg?v=1589187566"
+                    alt="Error">
+                 </div>
+                 <!-- <div class="swiper-slide"><img
+                    src=""
+                    alt="Error">
+                 </div> -->
+
+            </div>
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            
+        </div>
+    </div>
+</body>
+<script>
+    const swiper = new Swiper('.swiper', {
+        autoplay: {
+            delay: 2000,
+            disableOnIntraction: false,
+        },
+        loop: true,
+
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+    });
+</script>
+</html>

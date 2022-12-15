@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-In or Sign-Up</title>
+    <style>
+        #header{
+            border-bottom: 1px solid white;
+            padding-bottom: 10px;
+        }
+         #header>div:nth-child(1){
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    background-color: black;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+   }
+  #header>div:nth-child(1) a{
+    padding-right: 20px;
+    text-decoration: none;
+    color: white;
+   }
+   a:hover{
+    cursor: pointer;
+    background-color: black;
+   }
+   button:hover{
+    cursor: pointer;
+    background-color: black;
+   }
+   button{
+    background-color: black;
+    font-size: large;
+   }
+   nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+   }
+   nav a{
+    text-decoration: none;
+    padding-left: 20px;
+    color: white;
+   }
+   nav input{
+    width: 80%;
+    padding-left: 10px;
+    height: 50px;
+    background-color: black;
+   }
+   img{
+    width: 90x;
+    height: 90px;
+    border-radius: 5px;
+   }
+   img:hover{
+    cursor: pointer;
+   }
+   nav>div{
+    padding-top: 20px;
+   }
+
+   *{
+            background-color: black;
+            color:white;
+        }
+        input{
+            border: 0px;
+            border-bottom: 1px solid white;
+            padding-bottom: 10px;
+        }
+        #btn-1{
+            margin-top: 10px;
+            padding: 10px;
+        }
+       #grd{
+        width: 100%;
+        display: flex;
+        margin: auto;
+       height: 700px;
+       border-bottom: 1px solid white;
+       }
+       #grd>div:nth-child(1){
+        width: 40%;
+        text-align: left;
+        padding: 80px 20px 0px 55px;
+       }
+       #grd>div:nth-child(2){
+        width: 70%;
+       }
+       .mar{
+        width: 100%;
+        height: 100%;
+       }
+       .mar img {
+        width: 100%;
+        height: 100%;
+        background: transparent;
+       }
+       #links button{
+        display: block;
+        margin-top: 20px;
+        padding: 10px;
+       }
+       #links a{
+        text-decoration: none;
+       }
+      #footer{
+        width: 100%;
+        display: flex;
+        margin: auto;
+        gap: 30px;
+      }
+      #footer>div:nth-child(1){
+        padding: 60px;
+        width: fit-content;
+      }
+      #footer>div:nth-child(2){
+        width: 40%;
+        padding-top: 40px;
+      }
+      #footer>div:nth-child(3){
+        width: 40%;
+        padding-top: 40px;
+      }
+      .review{
+       width: 40%;
+       height: 35%;
+       background-color: black;
+       background-repeat: no-repeat;
+       background-size: cover;
+      }
+      .logo{
+        width: 30%;
+        height: 10%;
+      }
+      .social{
+        width: 12%;
+        height: 8%;
+      }
+      #footer a{
+        text-decoration: none;
+      }
+      #footer a:hover{
+        text-decoration: underline;
+      }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div>
+            <a href="">CN-US$</a>
+            <a href="">Help</a>
+            <a id="signup" ><button>Sign-Up or Log-In</button></a>
+        </div>
+        <nav>
+            <img src="./image/ezgif.com-gif-maker.gif" alt="">
+            <div>
+            <a href="">WOMEN</a>
+            <a href="">MEN</a>
+        </div>
+            <input type="search" placeholder="Search (e.g. 'Valentino dresses')">
+        </nav>
+        </div>
+   <div id="grd">
+    <div>
+        <h1>The Only Fashion Site You Need</h1>
+        <h2>Email</h2>
+        <form id="form">
+            <input type="email" placeholder="Enter your E-mail Here">
+        </form>
+        <button id="btn-1">Continue</button>
+        <p>----------or----------</p>
+        <div id="links">
+        <a href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?client_id=339631454810-1q56aau84m9steki9hvv8frnki0vvc5c.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fwww.lyst.com%2Fsocial%2Fcomplete%2Fgoogle-oauth2%2F&state=6RCntIklbHJdsKNf5qSIhqqfcqZtZl2X&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile%20openid%20email%20profile&prompt=select_account&service=lso&o2v=1&flowName=GeneralOAuthFlow"><button>Continue With Google</button></a>
+        <a href="https://appleid.apple.com/auth/authorize?client_id=com.lyst.lystapp.client&redirect_uri=https://www.lyst.com/social/complete/apple-id/&state=EWS31GXZPLG9S3pXQnB7hzMS5pKc4lj0&response_type=code&response_mode=form_post&scope=email%20name"><button>Continue With Apple</button></a>
+        <a href="https://www.facebook.com/v3.3/dialog/oauth?client_id=152784791451625&redirect_uri=https://www.lyst.com/social/complete/facebook/&state=UGh3qO623llNeNptKBlAmnIJ21TiNw6c&return_scopes=true&scope=email"><button>Continue With Facebook</button></a>
+    </div>
+        <p>By creating an account, you consent to Lst’s <a href="">Terms & Conditions</a> . To learn more about how Lst uses and protects your personal data, please read Lst’s <a href="">Privacy Policy</a>.</p>
+    </div>
+    <div>
+        <marquee class="mar" behaviur="scroll" direction="UP" ><img  src="https://static.lystit.com/static/n/img/sign-up/value-proposition-full-min.12502ad2e109c860f1eeceea2a988ddf.png" alt=""></marquee>
+    </div>
+    </div>
+    <div id="footer">
+        <div>
+            <img class="review" src="https://www.ticker.co.uk/wp-content/uploads/2021/07/Ticker-reaches-4.5-star-Trustpilot-score.jpg" alt="">
+            <br>
+            <img class="social" src="https://static.vecteezy.com/system/resources/previews/002/445/920/original/social-media-facebook-instagram-logos-bundle-free-vector.jpg" alt="">
+            <br>
+            <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUDbypklzLQ9hq5j1s2j6hpu_fjbQ8R8W-jw&usqp=CAU" alt="">
+             <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIDiRHdxKFl5jaDmSd1Y8HEbmffI2DyyGtiQ&usqp=CAU" alt="">
+             <p>Learn about the Lyst app for iPhone, iPad and Android.</p>
+             <p>© 2022 LST</p>
+            </div>
+            <div>
+                <h2>INTERNATIONAL</h2>
+               <p><a href="">LST-AU</a></p>
+               <p><a href="">LST-CA</a></p>
+               <p><a href="">LST-UK</a></p>
+               <p><a href="">LST-Ostrrich</a></p>
+               <p><a href="">LST-Schweiz</a></p>
+               <p><a href="">LST-Deuschland</a></p>
+               <p><a href="">LST-Espana</a></p>
+               <p><a href="">LST-France</a></p>
+               <p><a href="">LST-Italia</a></p>
+               <p><a href="">LST-Japan</a></p>
+               <p><a href="">LST-Belgie</a></p>
+               <p><a href="">LST-Netherland</a></p>
+            </div>
+            <div>
+                <h2>HELP AND INFO</h2>
+                <p><a href="">Help Center</a></p>
+                <p><a href="">About LST</a></p>
+                <p><a href="">Shipping Policy</a></p>
+                <p><a href="">Return Policy</a></p>
+                <p><a href="">Payments</a></p>
+                <p><a href="">Return Policy</a></p>
+                <p><a href="">Developers</a></p>
+                <p><a href="">Careers</a></p>
+                <p><a href="">Contact</a></p>
+                <p><a href="">Terms & Conditions</a></p>
+                <p><a href="">Privacy & Cookie Policy</a></p>
+                <p><a href="">Intellectual Property</a></p>
+                <p><a href="">Categories</a></p>
+                <p><a href="">Become a Partner</a></p>
+                <p><a href="">LST Insights</a></p>
+                <p><a href="">LST News</a></p>
+            </div>
+    </div>
+</body>
+<script>
+     let header = document.getElementById("header");
+    header.addEventListener("click",(e)=>{
+        e.preventDefault();
+    })
+    let footer = document.getElementById("footer")
+    footer.addEventListener("click",(e)=>{
+        e.preventDefault()
+    })
+</script>
+</html>
