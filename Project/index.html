@@ -20,7 +20,7 @@
         }
     #header{
             border-bottom: 1px solid white;
-            padding-bottom: 10px;
+            padding-bottom: 0px;
         }
    #header>div:nth-child(1){
     width: 100%;
@@ -136,8 +136,24 @@ margin-top: 130px;
   p{
     flex-direction: column-reverse;
   }
+  #fashion{
+    padding: 0;
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    background-color: currentColor;
+    color: cornsilk;
+  }
+  #highlights{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    background-color: currentColor;
+    color: cornsilk;
+  }
   #outerdiv{
-    width: 99%;
+    width: 100%;
     display: flex;
     margin: auto;
     position: absolute;
@@ -279,6 +295,124 @@ margin-top: 130px;
         margin-top: 20px;
         width: 60%;
     }
+    #tags{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        margin-top: 20px;
+        font-size: 11px;
+        gap: 20px;
+        border-top: 1px solid gray;
+    }
+    .innertag>h2:hover{
+    color: blue;
+    }
+   .innertag{
+    margin-bottom: 80px;
+   }
+    #tags>div:nth-child(2){
+        width: 100%;
+        text-align: left;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        padding: 0px 0px 0px 0px;
+        margin-top: 40px;
+    }
+    #tags>div:nth-child(1){
+        width: 6%;
+        text-align: center;
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        justify-content: center;
+        font-size: 15px;
+    }
+    #outertext{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        border-top: 1px solid gray;
+        padding-left: 10px;
+    }
+    .text{
+        width: 100%;
+        display: flex;
+    }
+    .text>div:nth-child(1){
+        margin-top: 15px;
+        text-align: right;
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        font-size: 13px;
+    }
+    .text>div a{
+        text-decoration: none;
+    }
+    .text>div a:hover{
+        text-decoration: underline;
+        color: blue;
+    }
+    .text>div:nth-child(2){
+        margin-left: 40px;
+        margin-top: 15px;
+        text-align: start;
+        display: inline;
+        position: absolute;
+        font-size: 15px;
+        line-height: 30px;
+
+    }
+    #footer{
+        width: 100%;
+        display: flex;
+        margin: auto;
+        gap: 30px;
+        margin-top: 30px;
+        border-top: 1px solid gray;
+      }
+      #footer>div:nth-child(1){
+        padding: 60px;
+        width: fit-content;
+        padding-bottom: 350px;
+      }
+      #footer>div:nth-child(2){
+        line-height: 25px;
+        width: 40%;
+        padding-top: 40px;
+      }
+      #footer>div:nth-child(3){
+        line-height: 25px;
+        width: 40%;
+        padding-top: 40px;
+        padding-bottom: 300px;
+      }
+      .review{
+       width: 37%;
+       height: 40%;
+       background-color: black;
+       background-repeat: no-repeat;
+       background-size: cover;
+      }
+      .logo{
+        margin-top: 10px;
+        width: 30%;
+        height: 12%;
+      }
+      .social{
+        margin-top: 10px;
+        width: 12%;
+        height: 8%;
+      }
+      #footer a{
+        text-decoration: none;
+      }
+      #footer a:hover{
+        text-decoration: underline;
+        color: blue;
+      }
+      #footer>div p{
+        margin-top: 10px;
+      }
+
    </style>
 </head>
 <body>
@@ -287,22 +421,31 @@ margin-top: 130px;
         <a href="">CN-US$</a>
         <a href="">Help</a>
         <a id="signup" ><button>Sign-Up or Log-In</button></a>
+        <a id="cart" href="">Cart</a>
     </div>
     <nav>
         <img src="./image/ezgif.com-gif-maker.gif" alt="">
         <div>
-        <a href="">WOMEN</a>
-        <a href="">MEN</a>
+        <a id="women" href="./women.html">WOMEN</a>
+        <a id="men" href="./men.html">MEN</a>
+        
     </div>
         <input type="search" placeholder="Search (e.g. 'Valentino dresses')">
     </nav>
+   
+    </div>
+    <div id="fashion">
+       <marquee behavior="scroll" direction="left"> <h1>LST Fashion</h1></marquee>
     </div>
     <div id="arrow-left" class="arrow"></div>
     <div class="slide slide1"></div>
     <div class="slide slide2"></div>
     <div id="arrow-right" class="arrow"></div>
-
+    <div id="highlights">
+        <marquee behavior="scroll" direction="right"><h1>Top Highlights</h1></marquee>
+    </div>
     <div id="outerdiv">
+        
         <div class="innerdiv">
              <p>ALL THAT GLITTERS</p>
              <marquee behavior="scroll" direction="right"><img src="https://cdna.lystit.com/cms/0d04b456_fa24_42aa_9d35_c7008854e970_e4c36405b2.png" alt="Error"></marquee>
@@ -500,21 +643,174 @@ margin-top: 130px;
             <p>Lyst members are notified when an item goes on sale.</p>
         </div>
             <div class="changeColor">
-                <h1 class="changecolor" >SIGN-UP FOR SMARTER SHOPPING</h1><button>Join ➡</button>
+                <h1 class="changecolor" >SIGN-UP FOR SMARTER SHOPPING</h1><a href="./signup.html"><button>Join ➡</button></a>
     </div>
     </div>
-
-
-  
+<div id="tags">
+    <div>
+        <h1>MOST WANTED</h1>
+    </div>
+    <div>
+        <div class="innertag"><h2>OPEN CUP BRAS</h2></div>
+        <div class="innertag"><h2>OFF SHOULDER GOWNS</h2></div>
+        <div class="innertag"><h2>ANGORA SWEATERS</h2></div>
+        <div class="innertag"><h2>EVIL-EYE EARRINGS</h2></div>
+        <div class="innertag"><h2>THE NORTH FACE NUPTSE JACKETS</h2></div>
+        <div class="innertag"><h2>FLARE JEANS</h2></div>
+        <div class="innertag"><h2>CORDUROY JEAN JACKET</h2></div>
+        <div class="innertag"><h2>NEW BALANCE 247 SNEAKERS</h2></div>
+        <div class="innertag"><h2>WIDE LEG SWEATPANTS</h2></div>
+        <div class="innertag"><h2>ADIDAS TERREX SHOES</h2></div>
+    </div>
+</div>
+<div id="outertext">
+<div class="text">
+    <div>
+    <h1>WOMEN'S CLOTHING</h1>
+</div>
+<div>
+        <a href=""><p>Jacket</p></a>
+        <a href=""><p>Suits</p></a>
+        <a href=""><p>Nightwear and sleepwear</p></a>
+        <a href=""><p>Lingerie</p></a>
+        <a href=""><p>Pants, Slacks and Chinos</p></a>
+        <a href=""><p>Beachwear and Swimwear</p></a>
+        <a href=""><p>Outfits</p></a>
+        <a href=""><p>Coasts</p></a>
+        <a href=""><p>Dresses</p></a>
+    </div>
+</div>
+<div class="text">
+    <div>
+        <h1>MEN'S CLOTHING</h1>
+    </div>
+        <div>
+            <a href=""><p>Jacket</p></a>
+            <a href=""><p>Suits</p></a>
+            <a href=""><p>Nightwear and sleepwear</p></a>
+            <a href=""><p>Innerwear</p></a>
+            <a href=""><p>Pants, Slacks and Chinos</p></a>
+            <a href=""><p>Beachwear</p></a>
+            <a href=""><p>T-Shirts</p></a>
+            <a href=""><p>Coasts</p></a>
+            <a href=""><p>Shorts</p></a>
+        </div>
+    </div>
+    <div class="text">
+        <div>
+            <h1>WOMEN'S SHOES</h1>
+        </div>
+           <div>
+            <a href=""><p>Heels</p></a>
+            <a href=""><p>Boots</p></a>
+            <a href=""><p>Sneakers</p></a>
+            <a href=""><p>Flats and flat shoes</p></a>
+           </div> 
+        
+        </div>
+        <div class="text">
+            <div>
+                <h1>MEN'S SHOES</h1>
+            </div>
+                <div>
+                    <a href=""><p>Sandals</p></a>
+                    <a href=""><p>Boots</p></a>
+                    <a href=""><p>Sneakers</p></a>
+                    <a href=""><p>Lace-ups</p></a>
+                    <a href=""><p>Formals</p></a>
+                </div>
+                
+            </div>
+            <div class="text">
+                <div>
+                    <h1>WOMEN'S ACCESSORIES</h1>
+                </div>
+                    <div>
+                        <a href=""><p>Watches</p></a>
+                        <a href=""><p>Headbands</p></a>
+                        <a href=""><p>Accessories</p></a>
+                        <a href=""><p>Phonecases</p></a>
+                        <a href=""><p>Face masks</p></a>
+                        <a href=""><p>Gloves</p></a>
+                        <a href=""><p>Wallets and Carholders</p></a>
+                        <a href=""><p>Belts</p></a>
+                        <a href=""><p>Scarves</p></a>
+                    </div>
+                   
+                </div>
+            </div>
+            <div id="footer">
+                <div>
+                    <img class="review" src="https://www.ticker.co.uk/wp-content/uploads/2021/07/Ticker-reaches-4.5-star-Trustpilot-score.jpg" alt="">
+                    <br>
+                    <img class="social" src="https://static.vecteezy.com/system/resources/previews/002/445/920/original/social-media-facebook-instagram-logos-bundle-free-vector.jpg" alt="">
+                    <br>
+                    <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUDbypklzLQ9hq5j1s2j6hpu_fjbQ8R8W-jw&usqp=CAU" alt="">
+                     <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIDiRHdxKFl5jaDmSd1Y8HEbmffI2DyyGtiQ&usqp=CAU" alt="">
+                     <p>Learn about the Lyst app for iPhone, iPad and Android.</p>
+                     <p>© 2022 LST</p>
+                    </div>
+                    <div>
+                        <h2>INTERNATIONAL</h2>
+                       <p><a href="">LST-AU</a></p>
+                       <p><a href="">LST-CA</a></p>
+                       <p><a href="">LST-UK</a></p>
+                       <p><a href="">LST-Ostrrich</a></p>
+                       <p><a href="">LST-Schweiz</a></p>
+                       <p><a href="">LST-Deuschland</a></p>
+                       <p><a href="">LST-Espana</a></p>
+                       <p><a href="">LST-France</a></p>
+                       <p><a href="">LST-Italia</a></p>
+                       <p><a href="">LST-Japan</a></p>
+                       <p><a href="">LST-Belgie</a></p>
+                       <p><a href="">LST-Netherland</a></p>
+                    </div>
+                    <div>
+                        <h2>HELP AND INFO</h2>
+                        <p><a href="">Help Center</a></p>
+                        <p><a href="">About LST</a></p>
+                        <p><a href="">Shipping Policy</a></p>
+                        <p><a href="">Return Policy</a></p>
+                        <p><a href="">Payments</a></p>
+                        <p><a href="">Return Policy</a></p>
+                        <p><a href="">Developers</a></p>
+                        <p><a href="">Careers</a></p>
+                        <p><a href="">Contact</a></p>
+                        <p><a href="">Terms & Conditions</a></p>
+                        <p><a href="">Privacy & Cookie Policy</a></p>
+                        <p><a href="">Intellectual Property</a></p>
+                        <p><a href="">Categories</a></p>
+                        <p><a href="">Become a Partner</a></p>
+                        <p><a href="">LST Insights</a></p>
+                        <p><a href="">LST News</a></p>
+                    </div>
+            </div>
 </body>
 <script>
     let header = document.getElementById("header");
     header.addEventListener("click",(e)=>{
         e.preventDefault();
     })
+    let footer = document.getElementById("footer")
+    footer.addEventListener("click",(e)=>{
+        e.preventDefault()
+    })
     let signup = document.getElementById("signup");
     signup.addEventListener("click",()=>{
         window.location.href="signup.html"
+    })
+    let women = document.getElementById("women")
+    women.addEventListener("click",()=>{
+        window.location.href="women.html"
+    })
+    let men = document.getElementById("men")
+    men.addEventListener("click",()=>{
+        window.location.href="men.html"
+    })
+    let cart=document.getElementById("cart")
+    cart.addEventListener("click",(e)=>{
+      e.preventDefault()
+        window.location.href="cart.html"
     })
 
     let sliderImages = document.querySelectorAll(".slide"),

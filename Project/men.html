@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           *{
+            background-color: black;
+            color:white;
+            margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: Suisse Intl,Helvetica Neue,Helvetica,Arial,sans-serif;;
+        }
+    #header{
+            border-bottom: 1px solid white;
+            padding-bottom: 0px;
+        }
+   #header>div:nth-child(1){
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    background-color: black;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+   }
+  #header>div:nth-child(1) a{
+    padding-right: 20px;
+    text-decoration: none;
+    color: white;
+   }
+   a:hover{
+    cursor: pointer;
+   }
+   button:hover{
+    cursor: pointer;
+    background-color: black;
+   }
+   button{
+    background-color: black;
+    font-size: large;
+   }
+   nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+   }
+   nav a{
+    text-decoration: none;
+    padding-left: 20px;
+    color: white;
+   }
+   nav input{
+    width: 80%;
+    padding-left: 10px;
+    height: 50px;
+    background-color: black;
+   }
+   img{
+    width: 90x;
+    height: 90px;
+    border-radius: 5px;
+   }
+   img:hover{
+    cursor: pointer;
+   }
+   nav>div{
+    padding-top: 20px;
+   }
+   #cart-cont{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    #cart-cont div{
+        width: 80%;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        margin-top: 10px;
+        padding: 10px;
+        text-align: center;
+    }
+    #cart-cont img{
+        width: 100%;
+        height: 70%;
+    }
+    #cart-cont button{
+        background-color:  gray;
+        color: white;
+        border: 0px;
+        border-radius: 4px;
+        padding: 3px;
+    }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div>
+            <a href="">CN-US$</a>
+            <a href="">Help</a>
+            <a id="signup" ><button>Sign-Up or Log-In</button></a>
+            <a href="">Cart</a>
+        </div>
+        <nav>
+            <img src="./image/ezgif.com-gif-maker.gif" alt="">
+            <div>
+            <a id="women" href="./women.html">WOMEN</a>
+            <a id="men" href="./men.html">MEN</a>
+        </div>
+            <input type="search" placeholder="Search (e.g. 'Valentino dresses')">
+        </nav>
+       
+        </div>
+    <div id="cart-cont">
+    </div>
+    
+    
+</body>
+<script>
+    let cont = document.getElementById("cart-cont")
+    fetch("https://6398bd4529930e2bb3c0a8bb.mockapi.io/Products")
+    .then ((res) =>{
+        return res.json()
+    })
+    .then ((actualData) => {
+        showData(actualData)
+        // console.log(actualData)
+
+    })
+    .catch((err) =>{
+        showData(err)
+    })
+
+    function showData(data){
+       data.forEach((element) => {
+            let card = document.createElement("div")
+            let img = document.createElement("img")
+            img.setAttribute("src",element.avatar)
+            let name = document.createElement("h4")
+            name.innerText= element.name;
+            let price = document.createElement("p")
+            price.innerText = element.price;
+            let rating = document.createElement("p")
+            rating.innerText = element.rating
+            let btn = document.createElement("button")
+            btn.innerText = "Add to cart"
+            btn.addEventListener("click",() =>{
+                let cartData = JSON.parse(localStorage.getItem("cart"))
+                if (cartData === null) cartData = [];
+                let isAlreadyinCard = false
+                for (let i=0; i<cartData.length; i++){
+                    if (cartData [i].id === element.id){
+                        isAlreadyinCard = true
+                        break; 
+                    }
+                }
+                if (isAlreadyinCard === true){
+                    alert("Product is already in the cart")
+                }else{
+                    cartData.push(element)
+                    localStorage.setItem("cart", JSON.stringify(cartData))
+                    alert("Product added to Cart")
+                }
+            })
+            card.append(img,name,price,rating,btn)
+            cont.append(card)
+        });
+    }
+    let header = document.getElementById("header");
+    header.addEventListener("click",(e)=>{
+        e.preventDefault();
+    })
+    let footer = document.getElementById("footer")
+    footer.addEventListener("click",(e)=>{
+        e.preventDefault()
+    })
+    let signup = document.getElementById("signup");
+    signup.addEventListener("click",()=>{
+        window.location.href="signup.html"
+    })
+    let women = document.getElementById("women")
+    women.addEventListener("click",()=>{
+        window.location.href="women.html"
+    })
+    let men = document.getElementById("men")
+    men.addEventListener("click",()=>{
+        window.location.href="men.html"
+    })
+    let cart=document.getElementById("cart")
+    cart.addEventListener("click",(e)=>{
+      e.preventDefault()
+        window.location.href="cart.html"
+    })
+</script>
+</html>
