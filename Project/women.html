@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WOMEN'S FASHION</title>
     <style>
            *{
             background-color: black;
@@ -96,6 +96,57 @@
         border-radius: 4px;
         padding: 3px;
     }
+    #footer{
+        width: 100%;
+        display: flex;
+        margin: auto;
+        gap: 30px;
+        margin-top: 30px;
+        border-top: 1px solid gray;
+      }
+      #footer>div:nth-child(1){
+        padding: 60px;
+        width: fit-content;
+        padding-bottom: 350px;
+      }
+      #footer>div:nth-child(2){
+        line-height: 25px;
+        width: 40%;
+        padding-top: 40px;
+      }
+      #footer>div:nth-child(3){
+        line-height: 25px;
+        width: 40%;
+        padding-top: 40px;
+        padding-bottom: 300px;
+      }
+      .review{
+       width: 37%;
+       height: 40%;
+       background-color: black;
+       background-repeat: no-repeat;
+       background-size: cover;
+      }
+      .logo{
+        margin-top: 10px;
+        width: 30%;
+        height: 12%;
+      }
+      .social{
+        margin-top: 10px;
+        width: 12%;
+        height: 8%;
+      }
+      #footer a{
+        text-decoration: none;
+      }
+      #footer a:hover{
+        text-decoration: underline;
+        color: blue;
+      }
+      #footer>div p{
+        margin-top: 10px;
+      }
     </style>
 </head>
 <body>
@@ -104,10 +155,10 @@
             <a href="">CN-US$</a>
             <a href="">Help</a>
             <a id="signup" ><button>Sign-Up or Log-In</button></a>
-            <a href="">Cart</a>
+            <a id="cart" href="">Cart</a>
         </div>
         <nav>
-            <img src="./image/ezgif.com-gif-maker.gif" alt="">
+            <img id="logo" src="./image/ezgif.com-gif-maker.gif" alt="">
             <div>
             <a id="women" href="./women.html">WOMEN</a>
             <a id="men" href="">MEN</a>
@@ -118,6 +169,52 @@
         </div>
     <div id="cart-cont">
     </div>
+    <div id="footer">
+      <div>
+          <img class="review" src="https://www.ticker.co.uk/wp-content/uploads/2021/07/Ticker-reaches-4.5-star-Trustpilot-score.jpg" alt="">
+          <br>
+          <img class="social" src="https://static.vecteezy.com/system/resources/previews/002/445/920/original/social-media-facebook-instagram-logos-bundle-free-vector.jpg" alt="">
+          <br>
+          <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUDbypklzLQ9hq5j1s2j6hpu_fjbQ8R8W-jw&usqp=CAU" alt="">
+           <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIDiRHdxKFl5jaDmSd1Y8HEbmffI2DyyGtiQ&usqp=CAU" alt="">
+           <p>Learn about the Lyst app for iPhone, iPad and Android.</p>
+           <p>© 2022 LST</p>
+          </div>
+          <div>
+              <h2>INTERNATIONAL</h2>
+             <p><a href="">LST-AU</a></p>
+             <p><a href="">LST-CA</a></p>
+             <p><a href="">LST-UK</a></p>
+             <p><a href="">LST-Ostrrich</a></p>
+             <p><a href="">LST-Schweiz</a></p>
+             <p><a href="">LST-Deuschland</a></p>
+             <p><a href="">LST-Espana</a></p>
+             <p><a href="">LST-France</a></p>
+             <p><a href="">LST-Italia</a></p>
+             <p><a href="">LST-Japan</a></p>
+             <p><a href="">LST-Belgie</a></p>
+             <p><a href="">LST-Netherland</a></p>
+          </div>
+          <div>
+              <h2>HELP AND INFO</h2>
+              <p><a href="">Help Center</a></p>
+              <p><a href="">About LST</a></p>
+              <p><a href="">Shipping Policy</a></p>
+              <p><a href="">Return Policy</a></p>
+              <p><a href="">Payments</a></p>
+              <p><a href="">Return Policy</a></p>
+              <p><a href="">Developers</a></p>
+              <p><a href="">Careers</a></p>
+              <p><a href="">Contact</a></p>
+              <p><a href="">Terms & Conditions</a></p>
+              <p><a href="">Privacy & Cookie Policy</a></p>
+              <p><a href="">Intellectual Property</a></p>
+              <p><a href="">Categories</a></p>
+              <p><a href="">Become a Partner</a></p>
+              <p><a href="">LST Insights</a></p>
+              <p><a href="">LST News</a></p>
+          </div>
+  </div>
     
     
 </body>
@@ -175,13 +272,17 @@
     header.addEventListener("click",(e)=>{
         e.preventDefault();
     })
-    let footer = document.getElementById("footer")
-    footer.addEventListener("click",(e)=>{
-        e.preventDefault()
+    let home = document.getElementById("logo")
+    home.addEventListener("click",()=>{
+        window.location.href="index.html"
     })
     let signup = document.getElementById("signup");
     signup.addEventListener("click",()=>{
         window.location.href="signup.html"
+    })
+    let footer = document.getElementById("footer")
+    footer.addEventListener("click",(e)=>{
+        e.preventDefault()
     })
     let women = document.getElementById("women")
     women.addEventListener("click",()=>{
@@ -198,219 +299,3 @@
     })
 </script>
 </html>
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-  <!-- {
-    "createdAt": "2022-12-16T00:54:01.538Z",
-    "name": "Kyle Heaney",
-    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1212.jpg",
-    "price": "939.00",
-    "rating": "6",
-    "id": "26"
-  },
-  {
-    "createdAt": "2022-12-16T00:00:46.570Z",
-    "name": "Mrs. Max Abernathy DDS",
-    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1116.jpg",
-    "price": "818.00",
-    "rating": "2",
-    "id": "27"
-  },
-  {
-    "createdAt": "2022-12-16T00:33:25.219Z",
-    "name": "Javier Abernathy",
-    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1144.jpg",
-    "price": "743.00",
-    "rating": "4",
-    "id": "28"
-  },
-  {
-    "createdAt": "2022-12-16T16:37:31.335Z",
-    "name": "Roxanne Watsica",
-    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1248.jpg",
-    "price": "325.00",
-    "rating": "1",
-    "id": "29"
-  },
-  {
-    "createdAt": "2022-12-15T23:08:20.426Z",
-    "name": "Kari Beier",
-    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/482.jpg",
-    "price": "954.00",
-    "rating": "4",
-    "id": "30"
-  },
-  {
-    "createdAt": "2022-12-16T09:02:43.315Z",
-    "name": "Naomi Kling V",
-    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/863.jpg",
-    "price": "672.00",
-    "rating": "8",
-    "id": "31"
-  },
-  {
-    "createdAt": "2022-12-16T03:46:04.358Z",
-    "name": "Mona Ankunding",
-    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/622.jpg",
-    "price": "460.00",
-    "rating": "1",
-    "id": "32"
-  },
-  {
-    "createdAt": "2022-12-16T02:22:58.901Z",
-    "name": "Byron Kerluke",
-    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/554.jpg",
-    "price": "311.00",
-    "rating": "3",
-    "id": "33"
-  },
-  {
-    "createdAt": "2022-12-16T04:45:41.311Z",
-    "name": "Marian Kovacek",
-    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/377.jpg",
-    "price": "971.00",
-    "rating": "2",
-    "id": "34"
-  },
-  {
-    "createdAt": "2022-12-16T12:23:36.249Z",
-    "name": "Becky Champlin",
-    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/632.jpg",
-    "price": "478.00",
-    "rating": "3",
-    "id": "35"
-  },
-  {
-    "createdAt": "2022-12-16T12:51:13.989Z",
-    "name": "Earl Bashirian",
-    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/640.jpg",
-    "price": "762.00",
-    "rating": "8",
-    "id": "36"
-  },
-  {
-    "createdAt": "2022-12-16T00:04:20.315Z",
-    "name": "Mrs. Alyssa Hahn",
-    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/494.jpg",
-    "price": "21.00",
-    "rating": "7",
-    "id": "37"
-  },
-  {
-    "createdAt": "2022-12-16T03:37:42.352Z",
-    "name": "Susan Cronin",
-    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/0.jpg",
-    "price": "630.00",
-    "rating": "4",
-    "id": "38"
-  },
-  {
-    "createdAt": "2022-12-16T02:43:45.392Z",
-    "name": "Freddie Kirlin",
-    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/874.jpg",
-    "price": "184.00",
-    "rating": "8",
-    "id": "39"
-  },
-  {
-    "createdAt": "2022-12-15T19:51:50.473Z",
-    "name": "Amber Kerluke",
-    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/439.jpg",
-    "price": "220.00",
-    "rating": "5",
-    "id": "40"
-  },
-  {
-    "createdAt": "2022-12-16T10:19:44.141Z",
-    "name": "Alonzo Bechtelar",
-    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/514.jpg",
-    "price": "49.00",
-    "rating": "9",
-    "id": "41"
-  },
-  {
-    "createdAt": "2022-12-16T01:55:45.994Z",
-    "name": "Robin Barton",
-    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1233.jpg",
-    "price": "9.00",
-    "rating": "8",
-    "id": "42"
-  },
-  {
-    "createdAt": "2022-12-16T13:16:09.919Z",
-    "name": "Manuel Brown IV",
-    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/599.jpg",
-    "price": "509.00",
-    "rating": "1",
-    "id": "43"
-  },
-  {
-    "createdAt": "2022-12-16T08:22:08.330Z",
-    "name": "Mrs. Mae McCullough",
-    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/48.jpg",
-    "price": "42.00",
-    "rating": "5",
-    "id": "44"
-  },
-  {
-    "createdAt": "2022-12-16T05:17:11.228Z",
-    "name": "Henrietta MacGyver",
-    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/101.jpg",
-    "price": "940.00",
-    "rating": "4",
-    "id": "45"
-  },
-  {
-    "createdAt": "2022-12-15T20:37:42.644Z",
-    "name": "Dr. Amos Kulas",
-    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/460.jpg",
-    "price": "271.00",
-    "rating": "7",
-    "id": "46"
-  },
-  {
-    "createdAt": "2022-12-16T13:08:59.944Z",
-    "name": "Lela Hodkiewicz",
-    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/401.jpg",
-    "price": "78.00",
-    "rating": "3",
-    "id": "47"
-  },
-  {
-    "createdAt": "2022-12-16T14:17:04.745Z",
-    "name": "Robin Schoen",
-    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1076.jpg",
-    "price": "618.00",
-    "rating": "7",
-    "id": "48"
-  },
-  {
-    "createdAt": "2022-12-16T15:52:30.503Z",
-    "name": "Sandra Wunsch",
-    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/577.jpg",
-    "price": "996.00",
-    "rating": "7",
-    "id": "49"
-  },
-  {
-    "createdAt": "2022-12-16T09:16:03.099Z",
-    "name": "Cecelia Marvin",
-    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/477.jpg",
-    "price": "849.00",
-    "rating": "8",
-    "id": "50"
-  }
-] -->

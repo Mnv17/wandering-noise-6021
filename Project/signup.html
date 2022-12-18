@@ -172,10 +172,10 @@
             <a href="">CN-US$</a>
             <a href="">Help</a>
             <a id="signup" ><button>Sign-Up or Log-In</button></a>
-            <a href="">Cart</a>
+            <a id="cart" href="">Cart</a>
         </div>
         <nav>
-            <img src="./image/ezgif.com-gif-maker.gif" alt="">
+            <img id="logo" src="./image/ezgif.com-gif-maker.gif" alt="">
             <div>
             <a id="women" href="">WOMEN</a>
             <a id="men" href="">MEN</a>
@@ -254,6 +254,10 @@
      let header = document.getElementById("header");
     header.addEventListener("click",(e)=>{
         e.preventDefault();
+    })
+    let home = document.getElementById("logo")
+    home.addEventListener("click",()=>{
+        window.location.href="index.html"
     })
     let footer = document.getElementById("footer")
     footer.addEventListener("click",(e)=>{
