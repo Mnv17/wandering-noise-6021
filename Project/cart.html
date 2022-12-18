@@ -6,6 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+         *{
+            background-color: black;
+            color:white;
+            margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: Suisse Intl,Helvetica Neue,Helvetica,Arial,sans-serif;;
+        }
+    #header{
+            border-bottom: 1px solid white;
+            padding-bottom: 0px;
+        }
+   #header>div:nth-child(1){
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    background-color: black;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+   }
+  #header>div:nth-child(1) a{
+    padding-right: 20px;
+    text-decoration: none;
+    color: white;
+   }
+   a:hover{
+    cursor: pointer;
+   }
+   button:hover{
+    cursor: pointer;
+    background-color: black;
+   }
+   button{
+    background-color: black;
+    font-size: large;
+   }
+   nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+   }
+   nav a{
+    text-decoration: none;
+    padding-left: 20px;
+    color: white;
+   }
+   nav input{
+    width: 80%;
+    padding-left: 10px;
+    height: 50px;
+    background-color: black;
+   }
+   img{
+    width: 90x;
+    height: 90px;
+    border-radius: 5px;
+   }
+   img:hover{
+    cursor: pointer;
+   }
+   nav>div{
+    padding-top: 20px;
+   }
         #cart-cont{
         display: grid;
         grid-template-columns: repeat(5,1fr);
@@ -21,8 +86,8 @@
         text-align: center;
     }
     #cart-cont img{
-        width: 100%;
-        height: 70%;
+        width: 90%;
+        height: 50%;
     }
     #cart-cont button{
         background-color:  gray;
@@ -31,11 +96,125 @@
         border-radius: 4px;
         padding: 3px;
     }
+    #footer{
+        width: 100%;
+        display: flex;
+        margin: auto;
+        gap: 30px;
+        margin-top: 30px;
+        border-top: 1px solid gray;
+      }
+      #footer>div:nth-child(1){
+        padding: 60px;
+        width: fit-content;
+        padding-bottom: 350px;
+      }
+      #footer>div:nth-child(2){
+        line-height: 25px;
+        width: 40%;
+        padding-top: 40px;
+      }
+      #footer>div:nth-child(3){
+        line-height: 25px;
+        width: 40%;
+        padding-top: 40px;
+        padding-bottom: 300px;
+      }
+      .review{
+       width: 37%;
+       height: 40%;
+       background-color: black;
+       background-repeat: no-repeat;
+       background-size: cover;
+      }
+      .logo{
+        margin-top: 10px;
+        width: 30%;
+        height: 12%;
+      }
+      .social{
+        margin-top: 10px;
+        width: 12%;
+        height: 8%;
+      }
+      #footer a{
+        text-decoration: none;
+      }
+      #footer a:hover{
+        text-decoration: underline;
+        color: blue;
+      }
+      #footer>div p{
+        margin-top: 10px;
+      }
     </style>
 </head>
 <body>
+    <div id="header">
+        <div>
+            <a href="">CN-US$</a>
+            <a href="">Help</a>
+            <a id="signup" ><button>Sign-Up or Log-In</button></a>
+            <a id="cart" href="">Cart</a>
+        </div>
+        <nav>
+            <img id="logo" src="./image/ezgif.com-gif-maker.gif" alt="">
+            <div>
+            <a id="women" href="./women.html">WOMEN</a>
+            <a id="men" href="./men.html">MEN</a>
+        </div>
+            <input type="search" placeholder="Search (e.g. 'Valentino dresses')">
+        </nav>
+       
+        </div>
     <div id="cart-cont">
 
+    </div>
+    <div id="footer">
+        <div>
+            <img class="review" src="https://www.ticker.co.uk/wp-content/uploads/2021/07/Ticker-reaches-4.5-star-Trustpilot-score.jpg" alt="">
+            <br>
+            <img class="social" src="https://static.vecteezy.com/system/resources/previews/002/445/920/original/social-media-facebook-instagram-logos-bundle-free-vector.jpg" alt="">
+            <br>
+            <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUDbypklzLQ9hq5j1s2j6hpu_fjbQ8R8W-jw&usqp=CAU" alt="">
+             <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIDiRHdxKFl5jaDmSd1Y8HEbmffI2DyyGtiQ&usqp=CAU" alt="">
+             <p>Learn about the Lyst app for iPhone, iPad and Android.</p>
+             <p>© 2022 LST</p>
+            </div>
+            <div>
+                <h2>INTERNATIONAL</h2>
+               <p><a href="">LST-AU</a></p>
+               <p><a href="">LST-CA</a></p>
+               <p><a href="">LST-UK</a></p>
+               <p><a href="">LST-Ostrrich</a></p>
+               <p><a href="">LST-Schweiz</a></p>
+               <p><a href="">LST-Deuschland</a></p>
+               <p><a href="">LST-Espana</a></p>
+               <p><a href="">LST-France</a></p>
+               <p><a href="">LST-Italia</a></p>
+               <p><a href="">LST-Japan</a></p>
+               <p><a href="">LST-Belgie</a></p>
+               <p><a href="">LST-Netherland</a></p>
+            </div>
+            <div>
+                <h2>HELP AND INFO</h2>
+                <p><a href="">Help Center</a></p>
+                <p><a href="">About LST</a></p>
+                <p><a href="">Shipping Policy</a></p>
+                <p><a href="">Return Policy</a></p>
+                <p><a href="">Payments</a></p>
+                <p><a href="">Return Policy</a></p>
+                <p><a href="">Developers</a></p>
+                <p><a href="">Careers</a></p>
+                <p><a href="">Contact</a></p>
+                <p><a href="">Terms & Conditions</a></p>
+                <p><a href="">Privacy & Cookie Policy</a></p>
+                <p><a href="">Intellectual Property</a></p>
+                <p><a href="">Categories</a></p>
+                <p><a href="">Become a Partner</a></p>
+                <p><a href="">LST Insights</a></p>
+                <p><a href="">LST News</a></p>
+            </div>
     </div>
 </body>
 <script>
@@ -64,15 +243,36 @@ function showData(data){
         let buynow = document.createElement("button")
         buynow.innerText = "Buy Now";
         let Delete = document.createElement("button")
-        Delete.innerText = "Remove From Cart"
+        Delete.innerText = "Remove"
         Delete.addEventListener("click",()=>{
-            cartData.splice(index,1)
-            localStorage.setItem("cart",JSON.stringify(cartData))
-            showData(cartData)
+            Cartcont.innerHTML=null;
+            cartData.splice(index,1);
+            localStorage.setItem("cart",JSON.stringify(cartData));
+            showData(cartData);
         })
         card.append(img,name,price,rating,buynow,Delete)
         Cartcont.append(card)
     });
 }
+let home = document.getElementById("logo")
+    home.addEventListener("click",()=>{
+        window.location.href="index.html"
+    })
+let signup = document.getElementById("signup");
+    signup.addEventListener("click",()=>{
+        window.location.href="signup.html"
+    })
+let footer = document.getElementById("footer")
+    footer.addEventListener("click",(e)=>{
+        e.preventDefault()
+    })
+    let women = document.getElementById("women")
+    women.addEventListener("click",()=>{
+        window.location.href="women.html"
+    })
+    let men = document.getElementById("men")
+    men.addEventListener("click",()=>{
+        window.location.href="men.html"
+    })
 </script>
 </html>
