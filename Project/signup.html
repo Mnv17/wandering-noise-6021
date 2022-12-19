@@ -163,6 +163,60 @@
         text-decoration: underline;
         color: blue;
       }
+      .dropdownMenu {
+            background-color: black;
+            text-align: center;
+            padding-right: 20px;
+        }
+
+        .dropdownMenu ul {
+            display: flex;
+            list-style: none;
+            width: 100%;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .dropdownMenu ul li {
+            padding: 10px 0px;
+            width: 100%;
+        }
+
+        .dropdownMenu ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .dropdownMenu>ul>li:hover {
+            background-color: black;
+        }
+
+        .subMenu1 {
+            display: none;
+        }
+
+        .dropdownMenu>ul>li:hover .subMenu1 {
+            display: block;
+            position: absolute;
+            /* background-color: #003380; */
+            margin-top: 15px;
+            margin-left: -15px;
+        }
+
+        .dropdownMenu>ul>li:hover .subMenu1 ul {
+            display: block;
+            margin: 10px;
+        }
+
+        .dropdownMenu>ul>li:hover .subMenu1 ul li {
+            width: 200px;
+            padding: 0px 10px 0px 30px;
+            background-color: transparent;
+            text-align: left;
+            line-height: 30px;
+        }
       
     </style>
 </head>
@@ -170,7 +224,21 @@
     <div id="header">
         <div>
             <a href="">CN-US$</a>
-            <a href="">Help</a>
+            <div class="dropdownMenu">
+                <ul>
+                    <li class="active">
+                        <p><a href="#">Help<i class="arrow down"></i></a></p>
+                        <div class="subMenu1">
+                            <ul>
+                                <li><a href="#">Help center</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Careers</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    </ul>
+                    </div>
             <a id="signup" ><button>Sign-Up or Log-In</button></a>
             <a id="cart" href="">Cart</a>
         </div>
